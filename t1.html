@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>webpage</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(234, 198, 79);
+                margin-top: 100px;
+            }
+            #container{
+                width: 60%;
+                margin: 40px auto;
+            }
+            #container1{
+                width: 60%;
+                margin: 20px auto;
+                background-color: rgb(227, 139, 8);
+                padding: 20px;
+                border-radius: 10px;
+            }
+            h1{
+                text-align: center;
+                font: 1em sans-serif;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 220px; /* Adjust size as needed */
+                height: auto; /* Maintain aspect ratio */
+                border-radius: 10%;
+            }
+               
+    
+            .button {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            </style>
+    </head>
+    <body>
+        <h1 style="color:rgb(137, 1, 1);"><b>UNIVERSE</b></h1>
+        <div id="container1">
+            <div id="container">
+              <h1><b>SPACE:The Universe Awaits</b></h1>
+              <p>Space, encompassing everything beyond Earth's atmosphere, is a vast, silent, and nearly 
+                empty expanse. It's a region of incredible scale and wonder, containing stars, planets, 
+                galaxies, and a multitude of other celestial bodies. </p>
+                <img src="https://plus.nasa.gov/wp-content/uploads/2023/08/star-forming_region_carina.en_.jpg?w=985" alt="Star Forming Region" >
+                <button class="button" id="ourButton" >Push me</button>
+            </div>
+        </div>
+        <script>
+            document.getElementById('ourButton').addEventListener('click', function() {
+                alert('!!!! It is about Space !!!!');
+            });
+        </script>
+    
+    </body>
