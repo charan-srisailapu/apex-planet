@@ -1,0 +1,168 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #fed7a3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Header/Nav */
+  header {
+    background: #f85858;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Grid layout */
+  .grid-container {
+   display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 0;
+  padding: 0;
+  }
+  
+  section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Contact Form */
+  .form-section input,
+  .form-section textarea {
+     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  
+  .form-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bfc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-section button:hover {
+    background-color: #005bb5;
+  }
+
+  .section-wrapper {
+  display: flex;
+  gap: 40px;
+  margin: 20vh 20vw; /* 20% gap from all four sides */
+  height: calc(60vh - 40px); /* Adjust height to fit inside margins */
+}
+.form-section, .todo-section {
+  flex: 1;
+  min-width: 0;
+}
+  
+  /* To-Do List */
+  .todo-section input {
+     width: 70%;
+    padding: 10px;
+  }
+  .todo-section {
+  border-right: none;
+  background: #f1f1f1;
+}
+  .form-section, .todo-section {
+      flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  min-width: 0;
+  background: #f9f9f9;
+  border-right: 1px solid #eee;
+  }
+  
+  #addTaskBtn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addTaskBtn:hover {
+    background: #218838;
+  }
+  
+  ul#taskList {
+    list-style: none;
+    margin-top: 20px;
+  }
+  ul#taskList li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul#taskList li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .delete-btn {
+    background: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+  @media (max-width: 900px) {
+    .grid-container {
+     flex-direction: column;
+    height: auto;
+    }
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .section-wrapper {
+    flex-direction: column;
+    margin: 5vh 2vw;
+    height: auto;
+  }
+  }
